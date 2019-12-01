@@ -1,0 +1,518 @@
+<!DOCTYPE html lang="en">
+<!--
+Name:		MikaelHansson.html
+Purpose: 	Personal Portfolio page - web assignment in FreeCodeCamp
+Created by: Mikael Hansson | 2016-04-12 | mikael@onsalait.se
+-->
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="description" content="Personal portfolio for Mikael Hansson">
+  <meta name="author" content="Mikael Hansson">
+
+  <title>Mikael Hansson</title>
+	<!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css">
+  <!-- Custom styles for this template -->
+  <link href="../css/carousel.css" rel="stylesheet">
+
+	<!-- My css -->
+  <link rel="stylesheet" href="../css/my_css.css" type="text/css">
+
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="../css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+</head>
+
+<body>
+
+	<!-- NAVBAR
+	================================================== -->
+  <div class="navbar-wrapper">
+    <div class="container">
+
+      <nav class="navbar navbar-inverse navbar-static-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Mikael Hansson</a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#myAbout">About</a></li>
+              <li><a href="#myPortfolio">Portfolio</a></li>
+              <li><a href="#myContact">Contact</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More info<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#myExperience">Experience</a></li>
+                  <li><a href="#myProjects">Projects</a></li>
+                  <li><a href="#mySkills">Skills</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#myEducation">Education</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    </div>
+  </div>
+
+  <!-- Carousel
+  ================================================== -->
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+  	<ol class="carousel-indicators">
+    	<li data-target="#myCarousel" data-slide-to="0" class=""></li>
+    	<li data-target="#myCarousel" data-slide-to="1" class=""></li>
+    	<li data-target="#myCarousel" data-slide-to="2" class="active"></li>
+    </ol>
+
+    <div class="carousel-inner" role="listbox">
+
+      <div class="item">
+        <img class="first-slide" src="../img/m_boat.jpg" alt="aft view from motorboat">
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Project Leader</h1>
+            <p>Prince2, scrum master, product owner</p>
+            <p><a class="btn btn-lg btn-primary" href="#myProjects" role="button">my projects</a></p>             
+          </div>
+        </div>
+      </div>
+
+    	<div class="item active left">
+    	  <img class="second-slide" src="../img/monster.jpg" alt="view from archipelago">
+    	  <div class="container">
+    	    <div class="carousel-caption">
+    	      <h1>ICT manager</h1>
+    	      <p>cobit, itil, application owner, systems director, erp manager</p>
+    	      <p><a class="btn btn-lg btn-primary" href="#myExperience" role="button">my experience</a></p>           
+    	    </div>
+    	  </div>
+    	</div>
+
+  		<div class="item next left">
+  		  <img class="third-slide" src="../img/s_berg.jpg" alt="vy over ocean">
+  		  <div class="container">
+  		    <div class="carousel-caption">
+  		      <h1>Developer</h1>
+  		      <p>c#, java, html, css, javaScript, jQuery, bootstrap, meteor, sql, monogame</p>
+  		      <p><a class="btn btn-lg btn-primary" href="#myPortfolio" role="button">browse portfolio</a></p>        
+  		    </div>
+  		  </div>
+  		</div>
+
+		</div>
+
+		<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+
+		<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+		</a>
+
+	</div><!-- /.carousel -->
+
+  <!-- The rest of the page...FEATURETTES
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  <div class="container marketing">
+
+  <!-- Three columns of text below the carousel -->
+  <div class="row">
+
+    <div class="col-lg-4">
+      <img class="img-circle" src="../img/mikael.jpg" alt="image of Mikael" width="140" height="140">
+      <h2>About</h2>
+      <p>I am a business and system analyst and have worked in the IT-industry since 1985 with software development, project management and as a leader/manager. I have my own company, <a href="http://www.onsalait.se" >Onsala IT AB</a>, and work as a consultant.</p>
+      <p><a class="btn btn-default" href="#myAbout" role="button">View details »</a></p>
+    </div><!-- /.col-lg-4 -->
+
+    <div class="col-lg-4">
+      <img class="img-circle" src="../img/killteddies.png" alt="image of a game" width="140" height="140">
+      <h2>Portfolio</h2>
+      <p>Most of my work is done for customers and is not possible to show, but I have gathered some examples of hobby or educational projects that I have done.</p></br>
+      <p><a class="btn btn-default" href="#myPortfolio" role="button">View details »</a></p>
+    </div><!-- /.col-lg-4 -->
+
+    <div class="col-lg-4">
+      <img class="img-circle" src="../img/phone.png" alt="image of a phone" width="140" height="140">
+      <h2>Contact</h2>
+      <p>Please reach out and get in contact with me if anything you see on this page makes you interested or if you have a business proposal. </p>
+      <a href="https://se.linkedin.com/pub/mikael-hansson/8/210/222" style="text-decoration:none;"><span style="font: 80% Arial,sans-serif; color:#0783B6;"><img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_in_20x15.png" width="20" height="15" alt="View Mikael Hansson's LinkedIn profile" style="vertical-align:middle;" border="0">&nbsp;View Mikael Hansson's profile</span></a></br></br>
+      <p><a class="btn btn-default" href="#myContact" role="button">View details »</a></p>
+    </div><!-- /.col-lg-4 -->
+
+  </div><!-- /.row -->
+
+
+      <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette" id="myAbout">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">About Mikael Hansson <span class="text-muted">Experience and seniority.</span></h2>
+          <p class="lead">I am a business and system analyst and have worked in the IT-industry since 1985 with software development, project management and as a leader/manager. </p>
+          <p>I have worked in an IT-project's all phases, for both large and small organizations and in different positions, both as a supplier and a customer. Many project have been in an international environment. I have also hold the position as an IT-manager with responsibility for both operations and development. I have my own company, <a href="http://www.onsalait.se" >Onsala IT AB</a>, and work as a consultant based in Onsala, Sweden.</p>
+          <p>
+            <ul>
+              <li>Manager/leadership > 10 years</li>
+              <li>Project management > 15 years</li>
+              <li>System development > 20 years</li>
+            </ul>
+          </p>
+          </br>
+            <h4>Personal</h4>
+            <p>I live very close to the sea and all things that relate to water have my attention. I like almost everything that has to do with boats, both sailing and motorboats. My free time outside my work is spend together with my family, my wife Karin and my two sons Gustav and Johan.</p>
+        </div>
+
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="../img/P1013436.JPG" data-holder-rendered="true">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette" id="myPortfolio">
+        <div class="col-md-7 col-md-push-5">
+          <h2 class="featurette-heading">Mikaels portfolio</br> <span class="text-muted">Blackjack - cardgame</span></h2>
+          <p class="lead">This simplified blackjack cardgame was created in C# using the MonoGame framework. For Windows.</p>
+        </div>
+        <div class="col-md-5 col-md-pull-7">
+          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="../img/blackjack.png" data-holder-rendered="true">
+        </div>
+      </div>  
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading"><span class="text-muted">KillTeddies - arcade style game</span></h2>
+          <p class="lead">This simplified arcade style game lets you control a hamburger that shoots french fries against attacking Teddies. It is programmed in C# using the MonoGame framework. For Windows.</p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="../img/killteddies.png" data-holder-rendered="true">
+        </div>
+      </div>
+
+      <div class="row featurette">
+        <div class="col-md-7 col-md-push-5">
+          <h2 class="featurette-heading"><span class="text-muted">NumberTiles - game</span></h2>
+          <p class="lead">Guess the number and click the correct tile. If the guess is wrong the tile shrinks and disappears and if the guess is right the tile blinks and a new board is presented. It is programmed in C# using the MonoGame framework. For Windows.</p>
+        </div>
+        <div class="col-md-5 col-md-pull-7">
+          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="../img/numberTile.png" data-holder-rendered="true">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette" id="myContact">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Contact information - <span class="text-muted">Let's get in contact!</span></h2>
+          <p class="lead">Please reach out and get in contact with me if anything you see on this page makes you interested or if you have a business proposal. </p>
+
+            <a href="https://se.linkedin.com/pub/mikael-hansson/8/210/222" style="text-decoration:none;"><span style="font: 80% Arial,sans-serif; color:#0783B6;"><img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_in_20x15.png" width="20" height="15" alt="View Mikael Hansson's LinkedIn profile" style="vertical-align:middle;" border="0">&nbsp;View Mikael Hansson's profile</span></a></br></br>
+            <p><a href="mailto:mikael@onsalait.se" >Write me an <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> e-mail</a>.</p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="../img/phone.png" data-holder-rendered="true">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+
+      <div class="row featurette" id="myExperience">
+        <div class="col-md-12">
+          <h2 class="featurette-heading">Experience - <span class="text-muted">Mikael's CV</span></h2>
+          <p class="lead">The table below show my major assignments: </p>
+          <table class=table>
+            <thead>
+              <th>From</th>
+              <th>To</th>
+              <th>Customer and role</th>
+              <th>Description</th>
+          </thead>
+            <tr>
+              <td>2015-04</td>
+              <td>on-going</td>
+              <td>Haldex – Program manager & Project leader (consultant – full time)</td>
+              <td>Responsible for an Interface program containing 40 large and small project interfacing to ERP systems like Ax2012, Ax7 and Axapta 3. Being a project leader/ICT coordinator for some of these projects. Managing the Business Change Advisory Board.</td>
+            </tr>
+            <tr>
+              <td>2013-06</td>
+              <td>2015-04</td>
+              <td>Haldex – Director of Development (consultant – full time)</td>
+              <td>Responsible for all Changes and Projects including internal and external development.</td>
+            </tr>
+            <tr>
+              <td>2011-03</td>
+              <td>2013-06</td>
+              <td>Haldex – Director ICT Systems och ERP manager (consultant – full time)</td>
+              <td>The Systems Manager 
+                <ul>
+                  <li>lead and manage the Systems Function within the CVS Corporate ICT business unit</li>
+                  <li>ensure that the Systems Function develops and delivers standardized and cost-efficient systems services of a high quality to the CVS Business</li>
+                  <li>ensure that the Systems Function delivers according to the ICT strategy and in alignment with the business strategy</li>
+                  <li>work in close collaboration with the Technology Function and the Program Management Office within CVS Corporate ICT. </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>2009-04</td>
+              <td>2011-03</td>
+              <td>Haldex – Change Manager (consultant – full time)</td>
+              <td>Responsible for support and Change Management for 8 Axapta companies in Europe and Mexico. </td>
+            </tr>
+            <tr>
+              <td>2008-07</td>
+              <td>2011-02</td>
+              <td>Fergus Engineering (consultant-part time)</td>
+              <td>Doing daily accounting. [for fun!]</td>
+            </tr>
+            <tr>
+              <td>2008-06</td>
+              <td>2008-12</td>
+              <td>Volvo Trucks – Application Owner (consultant - full time)</td>
+              <td>Worked within Business Systems as an Application owner with the reponsibility for around 15 different applications in the area of Commercial Trucks (sales of new vehicles).</td>
+            </tr>
+            <tr>
+              <td>2008-08</td>
+              <td>2008-12</td>
+              <td>SkandiaTransport – Project manager/coordinator (consultant – part time)</td>
+              <td>Responsible for leading and coordinating the development of a new interface (BizTalk 2006) between an internal application (SKT Car, VB6) and Dynamics Axapta 4.</td>
+            </tr>
+            <tr>
+              <td>2008-04</td>
+              <td>2008-07</td>
+              <td>SkandiaTransport – Product Owner (consultant – part time)</td>
+              <td>Work as a Product Owner and help to establish Scrum as a new methodology together with an external supplier (T-systems).</td>
+            </tr>
+            <tr>
+              <td>2008-02</td>
+              <td>2008-04</td>
+              <td>Haldex – Coordinator Ax-support (consultant – part time)</td>
+              <td>Responsible for coordinating the Axapta 3.0 support and development</td>
+            </tr>
+            <tr>
+              <td>2007-04</td>
+              <td>2008-01</td>
+              <td>SkandiaTransport – Project manager (consultant – full time)</td>
+              <td>Responsible for implementing the ERP system, Dynamics Ax 4.0 in three different companies, Sweden, Finland and Denmark.</td>
+            </tr>
+            <tr>
+              <td>2003-01</td>
+              <td>2007-04</td>
+              <td>SkandiaTransport – IT-manager (employee – full time)</td>
+              <td>Responsible for operations and development at the two companies AB SkandiaTransport and Göteborgs PDI AB. The companies have an operation in both Sweden and Denmark.</td>
+            </tr>
+            <tr>
+              <td>2002-05</td>
+              <td>2002-12</td>
+              <td>Projal AB – Managing Director (employee – full time)</td>
+              <td>Responsible for down sizing and terminating business agreements, customer engagements, employees and at last, also the company itself. The company had over 30 employees in three different locations. The task was to terminate the company as fast as possible, with as little loss, both goodwill and money, for the owners. The company was split and the parts was sold and when the task was complete almost all empoyees had been able to get help to find new jobbs or gone into education.</td>
+            </tr>
+            <tr>
+              <td>2002-01</td>
+              <td>2002-04</td>
+              <td>Volvo IT – analytics and system developer (consultant – full time)</td>
+              <td>Developed a business case and performed a pre-study for a new global Dealer system for Volvo Trucks. </td>
+            </tr>
+            <tr>
+              <td>2001-01</td>
+              <td>2001-12</td>
+              <td>Volvo IT – Business analyst (consultant – full time)</td>
+              <td>Work as a mentor for a new project team. Helped to gather user requirements and made preparations for implementations.</td>
+            </tr>
+            <tr>
+              <td>1998-01</td>
+              <td>2000-12</td>
+              <td>Volvo IT – project manager (consultant – full time)</td>
+              <td>Project manager and responsible for developing a central CRM system, CDB.</td>
+            </tr>
+            <tr>
+              <td>1998-03</td>
+              <td>1998-05</td>
+              <td>Volvofinans – analyst (consultant – 5 weeks)</td>
+              <td>Responsible for carrying out a pre-study. 4 different old legacy system should be replaced.</td>
+            </tr>
+            <tr>
+              <td>1998-08</td>
+              <td>1999-12</td>
+              <td>Volvo IT – system analyst TCB (consultant – full time)</td>
+              <td>Responsible for support, development, implementations, documentations and education. We installed in 23 countries (26 installations).</td>
+            </tr>
+            <tr>
+              <td>1995-03</td>
+              <td>1998-08</td>
+              <td>Volvo Trucks  – system developer AS/400 (consultant – full time)</td>
+              <td>Development, test, documentation and installations.</td>
+            </tr>
+            <tr>
+              <td>1995-01</td>
+              <td>1995-02</td>
+              <td>SKF – system developer  (consultant – full time)</td>
+              <td>RPG development i AS/400-environment and documentation. </td>
+            </tr>
+            <tr>
+              <td>1993-09</td>
+              <td>1994-12</td>
+              <td>SKF – project leader (employee – full time)</td>
+              <td>Responsible for developing a Schedule Handling system.</td>
+            </tr>
+            <tr>
+              <td>1992-01</td>
+              <td>1993-08</td>
+              <td>SKF – Implementation team  (employee – full time)</td>
+              <td>Responsible for several implementation  projects (SCSS – AS/400-environment). Installations, education and documentation was done in 13-countries in Europa, North and South America and Africa.</td>
+            </tr>
+            <tr>
+              <td>1990-08</td>
+              <td>1991-12</td>
+              <td>SKF Dataservice – system developer and system owner (employee – full time)</td>
+              <td>System owner for Finance modules (General Ledger, Accounts Receivable and Accounts Payable). Responsible for a support team.</td>
+            </tr>
+            <tr>
+              <td>1987-01</td>
+              <td>1989-12</td>
+              <td>CB Gedda AB – system developer  (consultant – part time))</td>
+              <td>Developed an ordering system using dBase-III plus.</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette" id="myProjects">
+        <div class="col-md-12">
+          <h2 class="featurette-heading">Projects - <span class="text-muted">Some projects I have been involved in</span></h2>
+          <p class="lead">The table below show some of the projects I participated in: </p>
+          <table class=table>
+            <thead>
+              <th>From</th>
+              <th>To</th>
+              <th>Project name</th>
+              <th>Description</th>
+          </thead>
+            <tr>
+              <td>2015-04</td>
+              <td>on-going</td>
+              <td>EDI module</td>
+              <td>Buy and customize an EDI module to be used with Dynamics Ax2012.</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette" id="mySkills">
+        <div class="col-md-12">
+          <h2 class="featurette-heading">Skills - <span class="text-muted">Some of my skill set</span></h2>
+          <p class="lead">The table below show some of the skills I have: </p>
+          <table class=table>
+            <thead>
+              <th>Last used</th>
+              <th>Skill</th>
+              <th>Description</th>
+          </thead>
+            <tr>
+              <td>2016</td>
+              <td>C#</td>
+              <td>Major Microsoft development language.</td>
+            </tr>
+            <tr>
+              <td>2016</td>
+              <td>C# and MonoGame</td>
+              <td>A game framework used in Visul Studio that allows you to develop grames using C#.</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette" id="myEducation">
+        <div class="col-md-12">
+          <h2 class="featurette-heading">Education - <span class="text-muted">Programs, courses and training</span></h2>
+          <p class="lead">The table below show the different courses I have done: </p>
+          <table class=table>
+            <thead>
+              <th>When</th>
+              <th>Duration</th>
+              <th>Name</th>
+              <th>Description</th>
+              <th>Provider</th>
+          </thead>
+            <tr>
+              <td>2016</td>
+              <td>12 weeks</td>
+              <td>Beginning Game Programming with C#</td>
+              <td>The Beginning Game Programming with C# course is all about learning how to develop video games using the C# programming language.</td>
+              <td>University of Colorado System - Coursera</td>
+            </tr>
+            <td>2014-2016</td>
+              <td>3 years</td>
+              <td>Information System Sciences</td>
+              <td>Degree of Bachelor of Science</td>
+              <td>LTU - Luleå Tekniska Universitet</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <!-- /END THE FEATURETTES -->
+
+
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>© 2016 Onsala IT AB - Mikael Hansson· <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+      </footer>
+
+    </div><!-- /.container -->
+
+
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+
+
+</body>
+</html>
